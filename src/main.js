@@ -13,7 +13,7 @@ const GAME_PACKS = [
     id: 'pack-a',
     name: 'A',
     description: 'Paket A',
-    timeLimit: 60,
+    timeLimit: 120,
     gridSize: 12,
     color: '#ffffff',
     words: [
@@ -28,7 +28,7 @@ const GAME_PACKS = [
     id: 'pack-b',
     name: 'B',
     description: 'Paket B',
-    timeLimit: 60,
+    timeLimit: 120,
     gridSize: 12,
     color: '#ffdd00',
     words: [
@@ -43,7 +43,7 @@ const GAME_PACKS = [
     id: 'pack-c',
     name: 'C',
     description: 'Paket C',
-    timeLimit: 60,
+    timeLimit: 120,
     gridSize: 12,
     color: '#ffffff',
     words: [
@@ -58,7 +58,7 @@ const GAME_PACKS = [
     id: 'pack-d',
     name: 'D',
     description: 'Paket D',
-    timeLimit: 60,
+    timeLimit: 120,
     gridSize: 12,
     color: '#ffdd00',
     words: [
@@ -73,7 +73,7 @@ const GAME_PACKS = [
     id: 'pack-e',
     name: 'E',
     description: 'Paket E',
-    timeLimit: 60,
+    timeLimit: 120,
     gridSize: 12,
     color: '#ffffff',
     words: [
@@ -88,7 +88,7 @@ const GAME_PACKS = [
     id: 'pack-f',
     name: 'F',
     description: 'Paket F',
-    timeLimit: 60,
+    timeLimit: 120,
     gridSize: 12,
     color: '#ffdd00',
     words: [
@@ -159,10 +159,65 @@ class AppManager {
     // DEBUG
     const urlParams = new URLSearchParams(window.location.search);
     const debugScreen = urlParams.get('screen');
-    if (debugScreen) {
-      setTimeout(() => this.showScreen(debugScreen), 0);
+    this.setupMusic();
+  }
+
+  setupMusic() {
+    this.audio = document.getElementById('bg-music');
+    this.musicToggle = document.getElementById('music-toggle');
+    this.musicOnIcon = document.getElementById('music-on-icon');
+    this.musicOffIcon = document.getElementById('music-off-icon');
+    this.isMusicPlaying = false;
+    this.userMuted = false;
+
+    // Set lower volume for background music
+    if (this.audio) this.audio.volume = 0.3;
+
+    if (this.musicToggle) {
+      this.musicToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.toggleMusic();
+      });
     }
 
+    const startMusic = () => {
+      if (!this.isMusicPlaying && !this.userMuted) {
+        this.playMusic();
+      }
+      window.removeEventListener('click', startMusic);
+      window.removeEventListener('touchstart', startMusic);
+    };
+
+    window.addEventListener('click', startMusic);
+    window.addEventListener('touchstart', startMusic);
+  }
+
+  toggleMusic() {
+    if (!this.audio) return;
+    if (this.isMusicPlaying) {
+      this.pauseMusic();
+      this.userMuted = true;
+    } else {
+      this.playMusic();
+      this.userMuted = false;
+    }
+  }
+
+  playMusic() {
+    if (!this.audio) return;
+    this.audio.play().then(() => {
+      this.isMusicPlaying = true;
+      if (this.musicOnIcon) this.musicOnIcon.classList.remove('hidden');
+      if (this.musicOffIcon) this.musicOffIcon.classList.add('hidden');
+    }).catch(err => console.warn("Audio play failed:", err));
+  }
+
+  pauseMusic() {
+    if (!this.audio) return;
+    this.audio.pause();
+    this.isMusicPlaying = false;
+    if (this.musicOnIcon) this.musicOnIcon.classList.add('hidden');
+    if (this.musicOffIcon) this.musicOffIcon.classList.remove('hidden');
   }
 
   showScreen(screenName) {

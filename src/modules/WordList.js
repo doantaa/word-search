@@ -7,13 +7,13 @@ export class WordList {
   render(wordObjects) {
     this.container.innerHTML = '';
     this.wordElements = {};
-    
+
     // Sort words by clue length or alphabetically. Let's do alphabetically by clue.
     const sortedWords = [...wordObjects].sort((a, b) => a.clue.localeCompare(b.clue));
 
     sortedWords.forEach(obj => {
       const el = document.createElement('div');
-      el.className = 'word-list-item w-full text-sm leading-relaxed';
+      el.className = 'word-list-item text-base sm:text-lg md:text-xl leading-relaxed py-1.5 px-3';
       el.textContent = obj.clue;
       this.container.appendChild(el);
       this.wordElements[obj.word] = el;
