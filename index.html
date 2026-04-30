@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Search Game</title>
+</head>
+
+<body class="min-h-screen flex flex-col antialiased text-slate-100 overflow-x-hidden relative">
+
+  <!-- Background Image -->
+  <div id="game-background"
+    class="fixed inset-0 z-0 pointer-events-none bg-cover bg-center bg-no-repeat opacity-100 transition-opacity duration-1000"
+    style="background-image: url('https://cdn.jsdelivr.net/gh/repixelhouse/personal-cdn@main/portfolio/2026Background.jpg');">
+  </div>
+  <div class="fixed inset-0 z-0 pointer-events-none bg-slate-900/10"></div>
+
+  <div id="app" class="flex-grow flex flex-col relative w-full h-full"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

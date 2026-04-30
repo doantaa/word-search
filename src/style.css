@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-100 font-sans selection:bg-indigo-500/30;
+  }
+}
+
+@layer components {
+  .word-search-cell {
+    @apply w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center border border-white/20 text-lg sm:text-xl md:text-2xl font-bold uppercase cursor-pointer select-none transition-all duration-200 ease-out;
+  }
+
+  .word-search-cell:hover {
+    @apply bg-white/30 shadow-inner;
+  }
+
+  .word-search-cell.selected {
+    @apply bg-indigo-500/80 text-white border-indigo-400 shadow-[0_0_15px_rgba(99,102,241,0.5)] transform scale-105 z-10;
+  }
+
+  .word-search-cell.found {
+    @apply bg-emerald-500/80 text-white border-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.5)];
+  }
+
+  .word-list-item {
+    @apply px-3 py-1.5 rounded-md bg-white/10 text-white font-medium tracking-wide transition-all duration-300;
+  }
+
+  .word-list-item.found {
+    @apply bg-emerald-500/30 text-emerald-400 line-through opacity-70;
+  }
+}

@@ -1,0 +1,27 @@
+<!-- Instruction Screen -->
+<div id="instruction-screen"
+  class="absolute inset-0 flex flex-col items-center justify-center z-35 opacity-0 pointer-events-none transition-opacity duration-500 px-4">
+  <div
+    class="bg-white/10 p-8 sm:p-12 rounded-3xl shadow-2xl border border-slate-700 max-w-2xl w-full backdrop-blur-sm text-center">
+    <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">Instruksi Permainan</h2>
+
+    <div class="text-slate-300 text-lg space-y-4 mb-10 text-left">
+      <p><strong>Tujuan:</strong> Temukan semua kata tersembunyi berdasarkan petunjuk (clue) yang diberikan sebelum
+        waktu habis.</p>
+      <p><strong>Cara Pilih:</strong> Klik dan seret (drag) kursor/jari Anda di atas papan huruf untuk memilih kata.
+        Kata bisa membentang secara horizontal, vertikal, maupun diagonal.</p>
+      <p><strong>Waktu:</strong> Waktu Permainan 1 Menit</p>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <button id="btn-instruction-back"
+        class="py-4 px-8 text-lg bg-red-600/20 text-white hover:text-red-600 rounded-xl transition-colors font-semibold hover:scale-105">
+        Pilih Paket Lain
+      </button>
+      <button id="btn-ready"
+        class="py-4 px-12 text-xl bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl font-bold transition-all  hover:scale-105">
+        Siap!
+      </button>
+    </div>
+  </div>
+</div>
