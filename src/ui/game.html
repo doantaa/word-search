@@ -1,23 +1,23 @@
 <!-- Game Screen -->
 <div id="game-screen"
-  class="flex-grow flex flex-col w-full h-full opacity-0 pointer-events-none transition-opacity duration-500 pt-8 pb-12">
+  class="flex-grow flex flex-col w-full h-full opacity-0 pointer-events-none transition-opacity duration-700 pt-8 pb-12">
   <header class="text-center mb-8">
     <h1 id="game-title" class="text-3xl md:text-4xl font-bold text-indigo-300 mb-2 hidden">Aw</h1>
   </header>
 
   <main
-    class="flex-grow flex flex-col xl:flex-row items-center xl:items-start justify-center gap-8 xl:gap-16 px-4 w-full max-w-7xl mx-auto">
+    class="flex-grow flex flex-col xl:flex-row items-center xl:items-start justify-center gap-8 xl:gap-16 px-4 w-full max-w-7xl 2xl:max-w-[90rem] mx-auto">
 
     <!-- Grid Container -->
     <section class="flex flex-col items-center">
-      <div class="bg-white/5 p-4 sm:p-6 rounded-2xl shadow-2xl backdrop-blur-sm border border-white/30">
+      <div class="bg-black/50 p-4 sm:p-6 rounded-2xl shadow-2xl backdrop-blur-sm border border-white/30">
         <div id="grid-container" class="grid gap-1 sm:gap-1.5 touch-none">
           <!-- Grid cells will be injected here by JS -->
         </div>
       </div>
 
       <button id="btn-quit"
-        class="mt-8 w-full max-w-xs py-3 px-4 bg-slate-700/80 hover:bg-red-600/90 text-white rounded-xl font-bold transition-colors duration-200 shadow-lg border border-slate-600/50 hover:border-red-500/50">
+        class="mt-8 w-full max-w-xs py-3 px-4 bg-slate-700/80 hover:bg-red-600/90 text-white rounded-xl font-bold transition-colors duration-200 shadow-lg border border-slate-600/50 hover:border-red-700/50">
         Quit Game
       </button>
     </section>
@@ -26,17 +26,17 @@
     <aside class="w-full max-w-xl xl:max-w-lg flex flex-col gap-6 xl:w-[450px]">
 
       <!-- Controls -->
-      <div class="bg-white/5 p-6 rounded-2xl shadow-xl backdrop-blur-sm border border-white/30 flex flex-col gap-4">
+      <div class="bg-black/50 p-6 rounded-2xl shadow-xl backdrop-blur-sm border border-white/30 flex flex-col gap-4">
         <div class="flex justify-center items-center">
-          <span id="timer-text" class="text-white text-4xl font-mono font-semibold">00:00</span>
+          <span id="timer-text" class="text-white text-4xl lg:text-6xl font-mono font-semibold">00:00</span>
         </div>
       </div>
 
       <!-- Word List -->
-      <div class="bg-white/5 p-6 rounded-2xl shadow-xl backdrop-blur-sm border border-white/30 flex flex-col h-full">
+      <div class="bg-black/50 p-6 rounded-2xl shadow-xl backdrop-blur-sm border border-white/30 flex flex-col h-full">
         <div class="flex justify-between items-center">
-          <h2 class="text-xl font-bold text-slate-200 mb-4 flex items-center gap-2">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          <h2 class="text-xl lg:text-3xl font-bold text-slate-200 mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 lg:w-8 lg:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
@@ -44,7 +44,7 @@
             </svg>
             Pertanyaan
           </h2>
-          <span id="progress-text" class="text-white font-semibold">0 / 0</span>
+          <span id="progress-text" class="text-white font-semibold lg:text-2xl">0 / 0</span>
         </div>
         <div id="word-list-container" class="flex flex-wrap gap-2 sm:gap-3">
           <!-- Word list items will be injected here by JS -->

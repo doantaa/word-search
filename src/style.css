@@ -10,7 +10,7 @@
 
 @layer components {
   .word-search-cell {
-    @apply w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center border border-white/20 text-lg sm:text-xl md:text-2xl font-bold uppercase cursor-pointer select-none transition-all duration-200 ease-out;
+    @apply w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 flex items-center justify-center border border-white/20 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold uppercase cursor-pointer select-none transition-all duration-200 ease-out;
   }
 
   .word-search-cell:hover {
@@ -26,7 +26,7 @@
   }
 
   .word-list-item {
-    @apply px-3 py-1.5 rounded-md bg-white/10 text-white font-medium tracking-wide transition-all duration-300;
+    @apply px-3 py-1.5 rounded-md bg-white/10 text-white font-medium tracking-wide transition-all duration-300 lg:text-xl lg:px-5 lg:py-2.5;
   }
 
   .word-list-item.found {

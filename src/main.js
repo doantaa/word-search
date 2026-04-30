@@ -10,109 +10,93 @@ import modalsHTML from './ui/modals.html?raw';
 // Configuration for the game packs
 const GAME_PACKS = [
   {
-    id: 'pack-web-dev',
+    id: 'pack-a',
     name: 'A',
-    description: 'HTML, CSS, JS, and all the tools.',
-    timeLimit: 90,
+    description: 'Paket A',
+    timeLimit: 60,
     gridSize: 12,
+    color: '#ffffff',
     words: [
-      { word: 'JAVASCRIPT', clue: 'Bahasa pemrograman untuk interaktivitas web' },
-      { word: 'TAILWIND', clue: 'Framework CSS yang berfokus pada utility-class' },
-      { word: 'HTML', clue: 'Bahasa markup dasar pembentuk web' },
-      { word: 'CSS', clue: 'Digunakan untuk memberi gaya (styling) pada halaman web' },
-      { word: 'MODULAR', clue: 'Pendekatan membagi kode menjadi bagian-bagian kecil' },
-      { word: 'FRONTEND', clue: 'Bagian web yang berinteraksi langsung dengan user' },
-      { word: 'DEVELOPER', clue: 'Seorang pekerja yang membuat software' },
-      { word: 'INTERFACE', clue: 'Antarmuka visual dari sebuah aplikasi' },
-      { word: 'COMPONENT', clue: 'Bagian UI mandiri yang dapat digunakan kembali' },
-      { word: 'ARCHITECTURE', clue: 'Struktur rancangan utama dari sebuah sistem perangkat lunak' }
+      { word: 'BANKSENTRAL', clue: 'Bank Indonesia adalah ... Republik Indonesia' },
+      { word: 'INFLASI', clue: 'Kenaikan tingkat harga barang dan jasa secara umum dan terus-menerus dalam suatu perekonomian disebut ….' },
+      { word: 'RECTOVERSO', clue: 'Sebuah unsur pengaman pada uang kertas yang menggunakan teknik cetak khusus. Ketika dilihat terpisah, gambar pada bagian depan dan belakang uang akan tampak seperti ornamen tidak beraturan. Namun, ketika diterawang, gambar-gambar tersebut akan membentuk sebuah gambar yang utuh.' },
+      { word: 'QRIS', clue: 'Standar kode QR nasional untuk pembayaran digital di Indonesia yang dikembangkan oleh Bank Indonesia dan Asosiasi Sistem Pembayaran Indonesia (ASPI)' },
+      { word: 'BIRATE', clue: 'Suku bunga kebijakan utama yang ditetapkan oleh Bank Indonesia saat ini dikenal sebagai...' },
     ]
   },
   {
-    id: 'pack-animals',
+    id: 'pack-b',
     name: 'B',
-    description: 'Creatures from around the world.',
+    description: 'Paket B',
     timeLimit: 60,
-    gridSize: 10,
+    gridSize: 12,
+    color: '#ffdd00',
     words: [
-      { word: 'ELEPHANT', clue: 'Hewan darat terbesar yang memiliki belalai' },
-      { word: 'GIRAFFE', clue: 'Mamalia dengan leher yang sangat panjang' },
-      { word: 'KANGAROO', clue: 'Hewan berkantung asli dari Australia' },
-      { word: 'DOLPHIN', clue: 'Mamalia laut yang sangat cerdas' },
-      { word: 'PENGUIN', clue: 'Burung yang tidak bisa terbang namun pandai berenang' },
-      { word: 'CHEETAH', clue: 'Kucing besar pelari tercepat di darat' },
-      { word: 'GORILLA', clue: 'Primata besar yang hidup berkelompok di hutan Afrika' },
-      { word: 'OSTRICH', clue: 'Burung terbesar di dunia yang berlari kencang' }
+      { word: 'INTAGLIO', clue: 'Teknik cetak yang menghasilkan tekstur timbul pada uang kertas dan memberikan kesan timbul pada gambar dan teks, sehingga uang kertas terasa kasar saat diraba.' },
+      { word: 'BIFAST', clue: 'Sistem pembayaran ritel nasional yang dikembangkan oleh Bank Indonesia untuk memfasilitasi transfer dan pembayaran secara real-time, aman, efisien, dan tersedia setiap saat (24/7).' },
+      { word: 'RUPIAH', clue: 'Mata Uang Negara Republik Indonesia ' },
+      { word: 'PINTAR', clue: 'Masyarakat dapat menukarkan Uang Rusak dan Uang yang ditarik dari peredaran ke BI terdekat dengan sebelumnya mendaftar pada Website' },
+      { word: 'CEMUMUAH', clue: 'Cepat, Mudah, Murah, Aman, dan Handal. Ini adalah prinsip yang diterapkan pada sistem pembayaran digital, khususnya Quick Response Code Indonesian Standard (QRIS). Dapat disingkat menjadi' }
     ]
   },
   {
-    id: 'pack-space',
+    id: 'pack-c',
     name: 'C',
-    description: 'To infinity and beyond!',
-    timeLimit: 80,
-    gridSize: 12,
-    words: [
-      { word: 'UNIVERSE', clue: 'Seluruh ruang, waktu, beserta isinya (Alam Semesta)' },
-      { word: 'GALAXY', clue: 'Sistem besar yang terdiri dari bintang, gas, dan debu' },
-      { word: 'ASTEROID', clue: 'Bebatuan kecil yang mengorbit matahari' },
-      { word: 'SATELLITE', clue: 'Benda yang mengorbit planet (alami maupun buatan)' },
-      { word: 'TELESCOPE', clue: 'Alat bantu untuk melihat benda langit yang jauh' },
-      { word: 'ASTRONAUT', clue: 'Orang yang pergi menjelajahi luar angkasa' },
-      { word: 'NEBULA', clue: 'Awan antarbintang yang terdiri dari debu dan gas' },
-      { word: 'SUPERNOVA', clue: 'Ledakan dahsyat dari suatu bintang' },
-      { word: 'GRAVITY', clue: 'Gaya tarik-menarik antar benda bermassa' }
-    ]
-  },
-  {
-    id: 'pack-fruits',
-    name: 'D',
-    description: 'Healthy and sweet nature snacks.',
-    timeLimit: 45,
-    gridSize: 10,
-    words: [
-      { word: 'APPLE', clue: 'Buah merah atau hijau yang renyah dan ikon merek teknologi' },
-      { word: 'BANANA', clue: 'Buah kuning panjang yang disukai monyet' },
-      { word: 'ORANGE', clue: 'Buah jeruk nipis kaya akan vitamin C' },
-      { word: 'MANGO', clue: 'Buah tropis yang manis dan berwarna kuning saat matang' },
-      { word: 'STRAWBERRY', clue: 'Buah merah kecil berbintik putih dengan rasa asam manis' },
-      { word: 'PINEAPPLE', clue: 'Buah berduri jambul berdaging kuning (nanas)' },
-      { word: 'GRAPES', clue: 'Buah ungu bergerombol bahan baku anggur' },
-      { word: 'WATERMELON', clue: 'Buah besar hijau dengan daging merah berair (semangka)' }
-    ]
-  },
-  {
-    id: 'pack-countries',
-    name: 'E',
-    description: 'Nations from different continents.',
-    timeLimit: 75,
-    gridSize: 12,
-    words: [
-      { word: 'INDONESIA', clue: 'Negara kepulauan terbesar di Asia Tenggara' },
-      { word: 'JAPAN', clue: 'Negara yang dijuluki Negeri Matahari Terbit' },
-      { word: 'BRAZIL', clue: 'Negara di Amerika Selatan yang terkenal dengan sepakbola dan samba' },
-      { word: 'CANADA', clue: 'Negara di utara Amerika Serikat bersimbol daun maple' },
-      { word: 'GERMANY', clue: 'Negara di Eropa yang beribukota Berlin' },
-      { word: 'AUSTRALIA', clue: 'Benua dan negara tempat kanguru berasal' },
-      { word: 'EGYPT', clue: 'Negara asal Piramida Giza dan sungai Nil' },
-      { word: 'MEXICO', clue: 'Negara tetangga Amerika Serikat yang terkenal dengan Taco' },
-      { word: 'FRANCE', clue: 'Negara di Eropa yang beribukota Paris' }
-    ]
-  },
-  {
-    id: 'pack-sports',
-    name: 'F',
-    description: 'Athletic competitions.',
+    description: 'Paket C',
     timeLimit: 60,
-    gridSize: 11,
+    gridSize: 12,
+    color: '#ffffff',
     words: [
-      { word: 'BASKETBALL', clue: 'Olahraga memasukkan bola ke keranjang' },
-      { word: 'SOCCER', clue: 'Sepak bola, olahraga paling populer di dunia' },
-      { word: 'TENNIS', clue: 'Olahraga raket dan bola hijau di lapangan' },
-      { word: 'SWIMMING', clue: 'Olahraga air bergerak maju di kolam' },
-      { word: 'VOLLEYBALL', clue: 'Olahraga memukul bola melampaui net (bola voli)' },
-      { word: 'BASEBALL', clue: 'Olahraga memukul bola dengan tongkat berlari ke base' },
-      { word: 'CRICKET', clue: 'Olahraga lapangan populer di India dan Inggris' },
-      { word: 'BADMINTON', clue: 'Olahraga raket dan kok (bulutangkis)' }
+      { word: 'BANGGA', clue: 'Apakah kepanjangan huruf B dalam CBP Rupiah?' },
+      { word: 'BICARA', clue: 'Nama call center Bank Indonesia adalah…' },
+      { word: 'BLINDCODE', clue: 'Garis di sisi kanan kiri uang yang terasa kasar apabila diraba dan digunakan tuna netra untuk mengetahui nominal uang disebut' },
+      { word: 'CROSSBORDER', clue: 'Fitur penggunaan QRIS antar negara disebut QRIS' },
+      { word: 'MALWARE', clue: 'Salah satu bentuk modus penipuan sistem pembayaran di era digital' }
+    ]
+  },
+  {
+    id: 'pack-d',
+    name: 'D',
+    description: 'Paket D',
+    timeLimit: 60,
+    gridSize: 12,
+    color: '#ffdd00',
+    words: [
+      { word: 'PHISING', clue: 'Salah satu bentuk modus penipuan sistem pembayaran di era digital ' },
+      { word: 'SMARTPHONE', clue: 'Jenis perangkat yang sering digunakan untuk mengakses internet' },
+      { word: 'DIGITAL', clue: 'QRIS merupakan salah satu jenis pembayaran' },
+      { word: 'WATERMARK', clue: 'Gambar pahlawan dan ornamen yang terlihat samar jika uang diterawangkan ke arah cahaya disebut..' },
+      { word: 'SYARIAH', clue: 'Ekonomi Islam disebut juga ekonomi.' }
+    ]
+  },
+  {
+    id: 'pack-e',
+    name: 'E',
+    description: 'Paket E',
+    timeLimit: 60,
+    gridSize: 12,
+    color: '#ffffff',
+    words: [
+      { word: 'GIRAL', clue: 'Alat pembayaran non-tunai seperti cek dan kartu debit/kredit termasuk dalam kategori uang…' },
+      { word: 'SKIMMING', clue: 'Jenis kejahatan cyber dengan cara mencuri data kartu debit atau kartu kredit untuk menarik dana di rekening korban disebut.' },
+      { word: 'KENALI', clue: 'Paham tanggung jawab konsumen dalam bertransaksi merupakan aspek …. dalam konsep Perlindungan Konsumen Bank Indonesia' },
+      { word: 'DILIHAT', clue: '3D adalah … , diraba, diterawang' },
+      { word: 'THAILAND', clue: 'QRIS Crossborder dapat digunakan di negara lain, salah satunya adalah' }
+    ]
+  },
+  {
+    id: 'pack-f',
+    name: 'F',
+    description: 'Paket F',
+    timeLimit: 60,
+    gridSize: 12,
+    color: '#ffdd00',
+    words: [
+      { word: 'LATENT', clue: 'Gambar atau tulisan yang akan terlihat jika uang digerakkan atau dilihat dari sudut pandang tertentu disebut … Image' },
+      { word: 'MIKROTEKS', clue: 'Tulisan-tulisan kecil yang hanya dapat dibaca dengan alat bantu atau kaca pembesar dalam Rupiah disebut' },
+      { word: 'MALAYSIA', clue: 'QRIS Crossborder dapat digunakan di negara lain, salah satunya adalah' },
+      { word: 'PEKA', clue: 'Program Pelindungan Konsumen Bank Indonesia disebut' },
+      { word: 'HYPERINFLASI', clue: 'Inflasi yang tidak terkendali disebut' }
     ]
   }
 ];
@@ -210,7 +194,9 @@ class AppManager {
 
     GAME_PACKS.forEach(pack => {
       const card = document.createElement('div');
-      card.className = 'bg-white/40 p-6 rounded-2xl shadow-lg border border-white/50 hover:border-indigo-100/50 hover:bg-white/80 transition-all cursor-pointer transform hover:-translate-y-1';
+      card.className = 'p-6 rounded-2xl shadow-lg border border-white/30 hover:border-white/60 transition-all cursor-pointer transform hover:-translate-y-1';
+      card.style.backgroundColor = `${pack.color}44`; // 44 is ~25% opacity
+      card.style.backdropFilter = 'blur(8px)';
       card.innerHTML = `
         <h3 class="text-6xl text-center my-16 font-bold text-white">${pack.name}</h3>
       `;
