@@ -13,7 +13,7 @@ const GAME_PACKS = [
     id: 'pack-a',
     name: 'A',
     description: 'Paket A',
-    timeLimit: 120,
+    timeLimit: 180,
     gridSize: 12,
     color: '#ffffff',
     words: [
@@ -28,7 +28,7 @@ const GAME_PACKS = [
     id: 'pack-b',
     name: 'B',
     description: 'Paket B',
-    timeLimit: 120,
+    timeLimit: 180,
     gridSize: 12,
     color: '#ffdd00',
     words: [
@@ -43,7 +43,7 @@ const GAME_PACKS = [
     id: 'pack-c',
     name: 'C',
     description: 'Paket C',
-    timeLimit: 120,
+    timeLimit: 180,
     gridSize: 12,
     color: '#ffffff',
     words: [
@@ -58,7 +58,7 @@ const GAME_PACKS = [
     id: 'pack-d',
     name: 'D',
     description: 'Paket D',
-    timeLimit: 120,
+    timeLimit: 180,
     gridSize: 12,
     color: '#ffdd00',
     words: [
@@ -73,7 +73,7 @@ const GAME_PACKS = [
     id: 'pack-e',
     name: 'E',
     description: 'Paket E',
-    timeLimit: 120,
+    timeLimit: 180,
     gridSize: 12,
     color: '#ffffff',
     words: [
@@ -88,7 +88,7 @@ const GAME_PACKS = [
     id: 'pack-f',
     name: 'F',
     description: 'Paket F',
-    timeLimit: 120,
+    timeLimit: 180,
     gridSize: 12,
     color: '#ffdd00',
     words: [
