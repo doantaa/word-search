@@ -81,7 +81,7 @@ const GAME_PACKS = [
       { word: 'MIKROTEKS', clue: 'Tulisan-tulisan kecil yang hanya dapat dibaca dengan alat bantu atau kaca pembesar dalam Rupiah disebut' },
       { word: 'BLINDCODE', clue: 'Garis di sisi kanan kiri uang yang terasa kasar apabila diraba dan digunakan tuna netra untuk mengetahui nominal uang disebut' },
       { word: 'QRIS', clue: 'Standar kode QR nasional untuk pembayaran digital di Indonesia yang dikembangkan oleh Bank Indonesia dan Asosiasi Sistem Pembayaran Indonesia (ASPI)' },
-      { word: 'HYPERINFLASI', clue: 'Inflasi yang tidak terkendali disebut' }
+      { word: 'THAILAND', clue: 'QRIS Crossborder dapat digunakan di negara lain, salah satunya adalah' }
     ]
   },
   {
@@ -96,7 +96,7 @@ const GAME_PACKS = [
       { word: 'INFLASI', clue: 'Kenaikan tingkat harga barang dan jasa secara umum dan terus-menerus dalam suatu perekonomian disebut ….' },
       { word: 'DILIHAT', clue: '3D adalah … , diraba, diterawang' },
       { word: 'MALAYSIA', clue: 'QRIS Crossborder dapat digunakan di negara lain, salah satunya adalah' },
-      { word: 'THAILAND', clue: 'QRIS Crossborder dapat digunakan di negara lain, salah satunya adalah' }
+      { word: 'HYPERINFLASI', clue: 'Inflasi yang tidak terkendali disebut' }
     ]
   }
 ];
