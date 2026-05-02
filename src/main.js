@@ -17,10 +17,10 @@ const GAME_PACKS = [
     gridSize: 12,
     color: '#ffffff',
     words: [
-      { word: 'BANKSENTRAL', clue: 'Bank Indonesia adalah ... Republik Indonesia' },
-      { word: 'INFLASI', clue: 'Kenaikan tingkat harga barang dan jasa secara umum dan terus-menerus dalam suatu perekonomian disebut ….' },
-      { word: 'RECTOVERSO', clue: 'Sebuah unsur pengaman pada uang kertas yang menggunakan teknik cetak khusus. Ketika dilihat terpisah, gambar pada bagian depan dan belakang uang akan tampak seperti ornamen tidak beraturan. Namun, ketika diterawang, gambar-gambar tersebut akan membentuk sebuah gambar yang utuh.' },
-      { word: 'QRIS', clue: 'Standar kode QR nasional untuk pembayaran digital di Indonesia yang dikembangkan oleh Bank Indonesia dan Asosiasi Sistem Pembayaran Indonesia (ASPI)' },
+      { word: 'LATENT', clue: 'Gambar atau tulisan yang akan terlihat jika uang digerakkan atau dilihat dari sudut pandang tertentu disebut … Image' },
+      { word: 'PEKA', clue: 'Program Pelindungan Konsumen Bank Indonesia disebut' },
+      { word: 'BIFAST', clue: 'Sistem pembayaran ritel nasional yang dikembangkan oleh Bank Indonesia untuk memfasilitasi transfer dan pembayaran secara real-time, aman, efisien, dan tersedia setiap saat (24/7).' },
+      { word: 'KENALI', clue: 'Paham tanggung jawab konsumen dalam bertransaksi merupakan aspek …. dalam konsep Perlindungan Konsumen Bank Indonesia' },
       { word: 'BIRATE', clue: 'Suku bunga kebijakan utama yang ditetapkan oleh Bank Indonesia saat ini dikenal sebagai...' },
     ]
   },
@@ -32,10 +32,10 @@ const GAME_PACKS = [
     gridSize: 12,
     color: '#ffdd00',
     words: [
-      { word: 'INTAGLIO', clue: 'Teknik cetak yang menghasilkan tekstur timbul pada uang kertas dan memberikan kesan timbul pada gambar dan teks, sehingga uang kertas terasa kasar saat diraba.' },
-      { word: 'BIFAST', clue: 'Sistem pembayaran ritel nasional yang dikembangkan oleh Bank Indonesia untuk memfasilitasi transfer dan pembayaran secara real-time, aman, efisien, dan tersedia setiap saat (24/7).' },
+      { word: 'BANKSENTRAL', clue: 'Bank Indonesia adalah ... Republik Indonesia' },
+      { word: 'BICARA', clue: 'Nama call center Bank Indonesia adalah…' },
       { word: 'RUPIAH', clue: 'Mata Uang Negara Republik Indonesia ' },
-      { word: 'PINTAR', clue: 'Masyarakat dapat menukarkan Uang Rusak dan Uang yang ditarik dari peredaran ke BI terdekat dengan sebelumnya mendaftar pada Website' },
+      { word: 'RECTOVERSO', clue: 'Sebuah unsur pengaman pada uang kertas yang menggunakan teknik cetak khusus. Ketika dilihat terpisah, gambar pada bagian depan dan belakang uang akan tampak seperti ornamen tidak beraturan. Namun, ketika diterawang, gambar-gambar tersebut akan membentuk sebuah gambar yang utuh.' },
       { word: 'CEMUMUAH', clue: 'Cepat, Mudah, Murah, Aman, dan Handal. Ini adalah prinsip yang diterapkan pada sistem pembayaran digital, khususnya Quick Response Code Indonesian Standard (QRIS). Dapat disingkat menjadi' }
     ]
   },
@@ -47,11 +47,11 @@ const GAME_PACKS = [
     gridSize: 12,
     color: '#ffffff',
     words: [
-      { word: 'BANGGA', clue: 'Apakah kepanjangan huruf B dalam CBP Rupiah?' },
-      { word: 'BICARA', clue: 'Nama call center Bank Indonesia adalah…' },
-      { word: 'BLINDCODE', clue: 'Garis di sisi kanan kiri uang yang terasa kasar apabila diraba dan digunakan tuna netra untuk mengetahui nominal uang disebut' },
+      { word: 'INTAGLIO', clue: 'Teknik cetak yang menghasilkan tekstur timbul pada uang kertas dan memberikan kesan timbul pada gambar dan teks, sehingga uang kertas terasa kasar saat diraba.' },
+      { word: 'SMARTPHONE', clue: 'Jenis perangkat yang sering digunakan untuk mengakses internet' },
+      { word: 'PINTAR', clue: 'Masyarakat dapat menukarkan Uang Rusak dan Uang yang ditarik dari peredaran ke BI terdekat dengan sebelumnya mendaftar pada Website' },
       { word: 'CROSSBORDER', clue: 'Fitur penggunaan QRIS antar negara disebut QRIS' },
-      { word: 'MALWARE', clue: 'Salah satu bentuk modus penipuan sistem pembayaran di era digital' }
+      { word: 'WATERMARK', clue: 'Gambar pahlawan dan ornamen yang terlihat samar jika uang diterawangkan ke arah cahaya disebut..' },
     ]
   },
   {
@@ -62,11 +62,11 @@ const GAME_PACKS = [
     gridSize: 12,
     color: '#ffdd00',
     words: [
-      { word: 'PHISING', clue: 'Salah satu bentuk modus penipuan sistem pembayaran di era digital ' },
-      { word: 'SMARTPHONE', clue: 'Jenis perangkat yang sering digunakan untuk mengakses internet' },
+      { word: 'BANGGA', clue: 'Apakah kepanjangan huruf B dalam CBP Rupiah?' },
+      { word: 'SKIMMING', clue: 'Jenis kejahatan cyber dengan cara mencuri data kartu debit atau kartu kredit untuk menarik dana di rekening korban disebut.' },
       { word: 'DIGITAL', clue: 'QRIS merupakan salah satu jenis pembayaran' },
-      { word: 'WATERMARK', clue: 'Gambar pahlawan dan ornamen yang terlihat samar jika uang diterawangkan ke arah cahaya disebut..' },
-      { word: 'SYARIAH', clue: 'Ekonomi Islam disebut juga ekonomi.' }
+      { word: 'SYARIAH', clue: 'Ekonomi Islam disebut juga ekonomi.' },
+      { word: 'MALWARE', clue: 'Salah satu bentuk modus penipuan sistem pembayaran di era digital' }
     ]
   },
   {
@@ -77,11 +77,11 @@ const GAME_PACKS = [
     gridSize: 12,
     color: '#ffffff',
     words: [
-      { word: 'GIRAL', clue: 'Alat pembayaran non-tunai seperti cek dan kartu debit/kredit termasuk dalam kategori uang…' },
-      { word: 'SKIMMING', clue: 'Jenis kejahatan cyber dengan cara mencuri data kartu debit atau kartu kredit untuk menarik dana di rekening korban disebut.' },
-      { word: 'KENALI', clue: 'Paham tanggung jawab konsumen dalam bertransaksi merupakan aspek …. dalam konsep Perlindungan Konsumen Bank Indonesia' },
-      { word: 'DILIHAT', clue: '3D adalah … , diraba, diterawang' },
-      { word: 'THAILAND', clue: 'QRIS Crossborder dapat digunakan di negara lain, salah satunya adalah' }
+      { word: 'PHISING', clue: 'Salah satu bentuk modus penipuan sistem pembayaran di era digital ' },
+      { word: 'MIKROTEKS', clue: 'Tulisan-tulisan kecil yang hanya dapat dibaca dengan alat bantu atau kaca pembesar dalam Rupiah disebut' },
+      { word: 'BLINDCODE', clue: 'Garis di sisi kanan kiri uang yang terasa kasar apabila diraba dan digunakan tuna netra untuk mengetahui nominal uang disebut' },
+      { word: 'QRIS', clue: 'Standar kode QR nasional untuk pembayaran digital di Indonesia yang dikembangkan oleh Bank Indonesia dan Asosiasi Sistem Pembayaran Indonesia (ASPI)' },
+      { word: 'HYPERINFLASI', clue: 'Inflasi yang tidak terkendali disebut' }
     ]
   },
   {
@@ -92,11 +92,11 @@ const GAME_PACKS = [
     gridSize: 12,
     color: '#ffdd00',
     words: [
-      { word: 'LATENT', clue: 'Gambar atau tulisan yang akan terlihat jika uang digerakkan atau dilihat dari sudut pandang tertentu disebut … Image' },
-      { word: 'MIKROTEKS', clue: 'Tulisan-tulisan kecil yang hanya dapat dibaca dengan alat bantu atau kaca pembesar dalam Rupiah disebut' },
+      { word: 'GIRAL', clue: 'Alat pembayaran non-tunai seperti cek dan kartu debit/kredit termasuk dalam kategori uang…' },
+      { word: 'INFLASI', clue: 'Kenaikan tingkat harga barang dan jasa secara umum dan terus-menerus dalam suatu perekonomian disebut ….' },
+      { word: 'DILIHAT', clue: '3D adalah … , diraba, diterawang' },
       { word: 'MALAYSIA', clue: 'QRIS Crossborder dapat digunakan di negara lain, salah satunya adalah' },
-      { word: 'PEKA', clue: 'Program Pelindungan Konsumen Bank Indonesia disebut' },
-      { word: 'HYPERINFLASI', clue: 'Inflasi yang tidak terkendali disebut' }
+      { word: 'THAILAND', clue: 'QRIS Crossborder dapat digunakan di negara lain, salah satunya adalah' }
     ]
   }
 ];
