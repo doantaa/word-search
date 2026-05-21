@@ -1,17 +1,16 @@
-<!-- Home Screen -->
-<div id="home-screen" class="absolute inset-0 flex items-center justify-center z-40 transition-opacity duration-500">
+<!-- Screen 1: Home -->
+<div id="home-screen"
+  class="absolute inset-0 flex flex-col justify-center items-center z-40 transition-opacity duration-500">
+  <div class="animate-floatIn p-12 text-center max-w-4xl w-full mx-4">
 
-  <div class="relative flex items-center justify-center">
+    <img id="home-title" class="w-auto mx-auto mb-8 select-none"
+      src="https://cdn.jsdelivr.net/gh/repixelhouse/personal-cdn@main/portfolio/logo-digifest.png" alt="Logo Digifest">
 
-    <img class="w-auto -translate-y-16"
-      src="https://cdn.jsdelivr.net/gh/repixelhouse/personal-cdn@main/portfolio/logo semarak.png" alt="Logo Semarak">
-
-    <button id="btn-start-game"
-      class="absolute bottom-36 -translate-y-8 py-4 px-10 text-4xl bg-sky-100/10 hover:bg-sky-100/20 text-white rounded-lg border-white border-[1px] font-bold transition-all duration-300 hover:scale-105">
-      Mulai
-    </button>
-
-
-
+    <div class="flex flex-col gap-3">
+      <button id="btn-start-game"
+        class="mx-auto py-4 px-10 text-4xl bg-sky-100/10 hover:bg-sky-100/20 text-white rounded-lg border-white border-[1px] font-bold transition-all duration-300 hover:scale-105">
+        Mulai
+      </button>
+    </div>
   </div>
 </div>
